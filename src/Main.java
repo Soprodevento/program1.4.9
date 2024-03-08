@@ -8,16 +8,14 @@ public class Main {
     }
 
     public int determineGroup(int age) {
-        int group;
         if (age >= 7 && age <= 13) {
-            group = 1;
+            return 1;
         } else if (age >= 14 && age <= 17) {
-            group = 2;
+            return 2;
         } else if (age >= 18 && age <= 65) {
-            group = 3;
+            return 3;
         } else {
-            group = -1;
+            return -1;
         }
-        return group;
     }
 }
